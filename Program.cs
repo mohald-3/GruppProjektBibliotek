@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hej grupp 2! Vi gör projektet tillsammans!");
+            Console.WriteLine("Här är min kod");
         }
     }
 }
