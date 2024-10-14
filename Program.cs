@@ -19,7 +19,7 @@
                 Console.WriteLine("4. Visa alla böcker");
                 Console.WriteLine("5. Checka ut en bok");
                 Console.WriteLine("6. Returnera en bok");
-                Console.WriteLine("9. Avsluta programmet");
+                Console.WriteLine("9. Avsluta Programmet");
                 
                 string input = Console.ReadLine()!;
 
