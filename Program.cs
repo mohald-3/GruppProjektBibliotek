@@ -7,6 +7,8 @@
             Console.WriteLine("Hej, välkommen till grupp 2 bibliotek!");
             bool start = true;
 
+            Bibliotek bibliotek = new Bibliotek();  
+
             while (start)
             {
                 Console.WriteLine("Vänligen ange ditt val");
@@ -19,9 +21,9 @@
                 Console.WriteLine("6. Returnera en bok");
                 Console.WriteLine("9. Avsluta programmet");
                 
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
 
-                switch(input)
+                switch (input)
                 {
                     case "1":
 
