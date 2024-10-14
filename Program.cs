@@ -49,12 +49,12 @@
 
                         break;
 
-                    case "7":
-
+                    case "9":
+                        Environment.Exit(0);
                         break;
 
                     default:
-
+                        Console.WriteLine("Fel inmatning, försök igen");
                         break;
 
 
