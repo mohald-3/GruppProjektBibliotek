@@ -34,7 +34,7 @@
                         break;
 
                     case "3":
-
+                        bibliotek.SökBokEnligtFörfattare();
                         break;
 
                     case "4":
