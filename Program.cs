@@ -1,6 +1,10 @@
-﻿namespace GruppProjektBibliotek
+﻿using System;
+
+
+
+namespace GruppProjektBibliotek  
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -26,7 +30,7 @@
                 switch (input)
                 {
                     case "1":
-
+                        bibliotek.LäggTillBok(bibliotek);
                         break;
 
                     case "2":
@@ -64,3 +68,7 @@
 
     }
 }
+
+
+
+
