@@ -23,7 +23,6 @@
                     Console.WriteLine("Inmatning får inte vara töm");
                 }
             }
-            while (string.IsNullOrEmpty(söktFörfattare));
 
             bool sökträff = false;
 
@@ -35,7 +34,6 @@
                     Console.WriteLine($"Titel: {bok.BokTitel}, Författare {bok.BokFörfattare}, ISBN {bok.ISBN}");
                     sökträff = true;
                 }
-            }
 
             if (sökträff == false)
             {
