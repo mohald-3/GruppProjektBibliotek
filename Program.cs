@@ -34,11 +34,11 @@
                         break;
 
                     case "3":
-
+                        bibliotek.SökBokEnligtFörfattare();
                         break;
 
                     case "4":
-
+                        bibliotek.VisaAllaBöcker();
                         break;
 
                     case "5":
@@ -52,12 +52,12 @@
 
                         break;
 
-                    case "7":
-
+                    case "9":
+                        Environment.Exit(0);
                         break;
 
                     default:
-
+                        Console.WriteLine("Fel inmatning, försök igen");
                         break;
 
 
