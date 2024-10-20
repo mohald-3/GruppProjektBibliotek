@@ -38,7 +38,7 @@
                         break;
 
                     case "4":
-
+                        bibliotek.VisaAllaBöcker();
                         break;
 
                     case "5":
