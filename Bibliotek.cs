@@ -120,7 +120,6 @@ namespace GruppProjektBibliotek
             Böcker.Remove(bok);
             Console.WriteLine($"Boken \"{titel}\" har tagits bort från biblioteket.");
         }
-    }
 
         public void VisaAllaBöcker()
         {
@@ -149,5 +148,5 @@ namespace GruppProjektBibliotek
                 Console.WriteLine($"- \"{bok.BokTitel}\" av {bok.BokFörfattare} (ISBN: {bok.ISBN}, Status: {status})");
             }
         }
-
     }
+}
