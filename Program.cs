@@ -34,18 +34,21 @@
                         break;
 
                     case "3":
-
+                        bibliotek.SökBokEnligtFörfattare();
                         break;
 
                     case "4":
-
+                        bibliotek.VisaAllaBöcker();
                         break;
 
                     case "5":
+                        bibliotek.CheckaUtBok();
 
                         break;
 
                     case "6":
+                        bibliotek.ReturneraBok();
+
 
                         break;
 
