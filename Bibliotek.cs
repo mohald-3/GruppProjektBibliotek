@@ -1,4 +1,4 @@
-﻿namespace GruppProjektBibliotek
+namespace GruppProjektBibliotek
 {
     public class Bibliotek
     {
@@ -104,6 +104,24 @@
         }
 
 
+        public void TakeAwayBook()
+        {
+            Console.Write("Skriv titeln på boken du vill radera: ");
+            string titel = Console.ReadLine()!;
+
+            var bok = Böcker.Find(b => b.BokTitel.Equals(titel, StringComparison.OrdinalIgnoreCase));
+
+            if (bok == null)
+            {
+                Console.WriteLine($"Boken \"{titel}\" kunde tyvärr inte hittas.");
+                return;
+            }
+
+            Böcker.Remove(bok);
+            Console.WriteLine($"Boken \"{titel}\" har tagits bort från biblioteket.");
+        }
+    }
+
         public void VisaAllaBöcker()
         {
             // Kontrollera om det finns några böcker i biblioteket
@@ -131,5 +149,5 @@
                 Console.WriteLine($"- \"{bok.BokTitel}\" av {bok.BokFörfattare} (ISBN: {bok.ISBN}, Status: {status})");
             }
         }
+
     }
-}
