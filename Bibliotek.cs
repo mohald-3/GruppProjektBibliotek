@@ -15,8 +15,17 @@
             Console.WriteLine("Ange titeln på boken du vill checka ut:");
             string söktTitel = Console.ReadLine()!;
 
-            // Sök efter boken i listan
-            Bok? bokAttCheckaUt = Böcker.FirstOrDefault(bok => bok.BokTitel == söktTitel && !bok.IsCheckedOut);
+            // Använd en foreach-loop för att söka efter boken
+            Bok? bokAttCheckaUt = null;
+
+            foreach (Bok bok in Böcker)
+            {
+                if (bok.BokTitel == söktTitel && !bok.IsCheckedOut)
+                {
+                    bokAttCheckaUt = bok;
+                    break; // Avbryt loopen så fort vi hittar boken
+                }
+            }
 
             if (bokAttCheckaUt != null)
             {
@@ -30,15 +39,24 @@
             }
         }
 
-        
-        
+
+
         public void ReturneraBok()
         {
             Console.WriteLine("Ange titeln på boken du vill returnera:");
             string söktTitel = Console.ReadLine()!;
 
-            // Sök efter boken i listan
-            Bok? bokAttReturnera = Böcker.FirstOrDefault(bok => bok.BokTitel == söktTitel && bok.IsCheckedOut);
+            // Använd en foreach-loop för att söka efter boken
+            Bok? bokAttReturnera = null;
+
+            foreach (Bok bok in Böcker)
+            {
+                if (bok.BokTitel == söktTitel && bok.IsCheckedOut)
+                {
+                    bokAttReturnera = bok;
+                    break; // Avbryt loopen så fort vi hittar boken
+                }
+            }
 
             if (bokAttReturnera != null)
             {
@@ -51,12 +69,6 @@
                 Console.WriteLine($"Boken '{söktTitel}' finns inte i systemet eller är redan returnerad.");
             }
         }
-
-
-
-
-
-
 
 
     }
