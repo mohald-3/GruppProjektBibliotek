@@ -11,6 +11,19 @@ namespace GruppProjektBibliotek
         public Bibliotek()   
         {
             Böcker = new List<Bok>();
+
+            Bok bok1 = new Bok("Life", "Mohanad", 1111);
+            Bok bok2 = new Bok("Animals", "Ward", 2222);
+            Bok bok3 = new Bok("Bilar", "Balen", 3333);
+            Bok bok4 = new Bok("Sverige", "Alexander", 4444);
+            Bok bok5 = new Bok("Dragonball", "Yazid", 5555);
+
+            Böcker.Add(bok1);
+            Böcker.Add(bok2);
+            Böcker.Add(bok3);
+            Böcker.Add(bok4);
+            Böcker.Add(bok5);
+
         }
 
         public void SökBokEnligtFörfattare()
